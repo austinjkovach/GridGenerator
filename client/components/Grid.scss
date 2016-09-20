@@ -1,0 +1,28 @@
+.grid {
+  min-width: 320px;
+  margin: 50px 10%;
+
+  .block-container {
+    margin: 5px 0;
+    display: inline-block;
+    border-right: 2px solid #000;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-container {
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px 0;
+    }
+  }
+}
