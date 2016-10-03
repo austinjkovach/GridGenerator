@@ -4,6 +4,11 @@
   <title></title>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+  </div>
+  <script>
+    var timeWorker = new Worker('./client/components/metronomeWorker.js');
+    var audioContext = new AudioContext();
+  </script>
 </body>
 </html>

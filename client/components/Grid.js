@@ -31,12 +31,10 @@ class Grid extends React.Component {
           <div className="btn-container">
             {
               this.props.grid.map(function(note, i) {
-                console.log('note', note)
                 return (
                   <FloatingActionButton onClick={component.props.toggleDrag.bind(component, i)} mini={true} secondary={!note.drag} key={i}>
                     <SvgIcon viewBox='0 0 100 100'>
                       <rect width="55" height="15" transform="translate(20 55) rotate(-25)" />
-
                     </SvgIcon>
                   </FloatingActionButton>
                 )
